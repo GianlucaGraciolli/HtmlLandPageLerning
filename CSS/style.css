@@ -1,0 +1,12 @@
+p{ /*seletor*/
+    color: blue; /* propriedade: valor */
+}
+
+table {
+    border:1px solid #EEEEEE;
+    background-color: #e97171;
+       }
+
+th, td{
+    border: 1px solid #EEEEEE;    
+}
