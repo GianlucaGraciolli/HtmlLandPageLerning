@@ -1,0 +1,26 @@
+fieldset {
+    border: 2px solid #000000;
+    width: 32vw;
+    margin: auto;
+    padding: 15px 0 10px 10px;
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 3rem;
+    text-align: center;
+    padding: 16px 0 16px 0
+}
+
+.componente-form{
+    margin-bottom: 8px;
+}
+
+#sugestoes-front {
+    width: 95%;
+    margin-top: 8px;
+}
+
+#satisfacao-front {
+    
+}
