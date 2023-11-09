@@ -12,9 +12,12 @@
 
 <body>
     <h1>Formulário do Torcedor</h1>
-    <fieldset>
-        <legend>Dados pessoais</legend>
-        <form action="formulario.php" method="GET">
+
+    <form action="formulario.php" method="GET">
+        <div class="formularios">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
             <div class="componente-form">
                 <label for="nome-front"> Nome: </label>
                 <input type="text" name="nome" id="nome-front" placeholder="Digite seu nome..." required>
@@ -32,13 +35,13 @@
                 <input type="email" name="email" id="email-front" required>
             </div>
             <div class="componente-form">
-                <label> Gênero: </label>
+                <label> Gênero: </label> <br>
                 <input type="radio" name="genero" id="genero-mas-front" value="Masculino">
-                <label for="genero-mas-front">Masculino</label>
+                <label for="genero-mas-front">Masculino</label> <br>
                 <input type="radio" name="genero" id="genero-fem-front" value="Feminino">
-                <label for="genero-mas-front">Feminino</label>
+                <label for="genero-fem-front">Feminino</label> <br>
                 <input type="radio" name="genero" id="genero-ind-front" value="Indefinido">
-                <label for="genero-mas-front">Indefinido</label>
+                <label for="genero-ind-front">Indefinido</label>
             </div>
             <div class="componente-form">
                 <label>Opções:</label> <br>
@@ -68,18 +71,82 @@
                 <textarea name="sugestoes" id="sugestoes-front" cols="40" rows="10"
                     placeholder="digite aqui..."></textarea>
             </div>
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <legend>COISAS A MAIS TCHAAN</legend>
-    </fieldset>
+        <fieldset>
+            <legend>Dados do seu prêmio</legend>
 
-    <div class="componente-form">
-        <input type="reset" value="Limpar Formulário">
-        <input type="submit" value="Enviar">
-    </div>
+            <div class="componente-form">
+                <label for="time2-front"> 2º Time do coração:</label>
+                <input type="text" name="time2" id="time2-front" placeholder="Digite o nome do time...">
+            </div>
+
+            <div class="componente-form">
+                <label> Qual final internacional gostaria de assistir? </label> <br>
+                <input type="radio" name="opcao-assistir" id="Opcao-Uefa-front" value="Uefa">
+                <label for="Opcao-Uefa-front"> UEFA </label> <br>
+                <input type="radio" name="opcao-assistir" id="Opcao-Liberta-front" value="Libertadores">
+                <label for="Opcao-Liberta-front"> Libertadores </label> <br>
+                <input type="radio" name="opcao-assistir" id="Opcao-Nacional-front" value="Nacional">
+                <label for="Opcao-Nacional-front"> Campeonato Nacional </label>
+            </div>
+
+            <div class="componente-form">
+                <label> Na premiação: </label> <br>
+                <input type="checkbox" name="op-visita-estadio" id="op-visita-estadio-front">
+                <label for="op-visita-estadio-front"> Incluir visita ao estádio.</label> <br>
+                <input type="checkbox" name="op-visita-trofeus" id="op-visita-trofeus-front">
+                <label for="op-visita-trofeus-front"> Incluir visita a galeria de títulos do clube.</label>
+            </div>
+
+            <div class="componente-form">
+                <label> Transporte - (pago pelo premiado): </label> <br>
+                <input type="checkbox" name="op-trans-terra" id="op-trans-terra-front">
+                <label for="op-trans-terra-front"> Terrestre. </label> <br>
+                <input type="checkbox" name="op-trans-aereo" id="op-trans-aereo-front">
+                <label for="op-trans-aereo-front"> Aéreo. </label>
+            </div>
+
+            <div class="componente-form">
+                <label for="forma-pagamento-front"> Método de pagamento:</label>
+                <select name="forma-pagamento" id="forma-pagamento-front">
+                    <option> Escolha o Método... </option>
+                    <option value="vist"> À Vista </option>
+                    <option value="bole"> Boleto </option>
+                    <option value="debi"> Débito </option>
+                    <option value="cred"> Crédito </option>
+                </select>
+            </div>
+
+            <div class="componente-form">
+                <label> Portador de necessidades especiais? </label> <br>
+                <input type="radio" name="op-port-especial" id="op-sim-especial-front" value="sim">
+                <label for="op-sim-especial-front"> Sim </label> <br>
+                <input type="radio" name="op-port-especial" id="op-nao-especial-front" value="nao">
+                <label for="op-nao-especial-front"> Não </label> <br>
+            </div>
+
+            <div class="componente-form">
+                <label for="port-especial"> Caso sim, Quais necessidades? </label> <br>
+                <textarea name="necessidades-especiais" id="necessidades-especiais-front" cols="30" rows="10"
+                    placeholder="Digite suas necessidades aqui..."></textarea>
+            </div>
+
+            <div class="componente-form">
+                <label for="observacoes-front"> Observações gerais: </label> <br>
+                <textarea name="observacoes" id="observacoes-front" cols="30" rows="10"
+                    placeholder="Digite aqui..."></textarea>
+            </div>
+
+        </fieldset>
+        </div>
+        <div class="componente-form" id="limpa-envia">
+            <input type="reset" value="Limpar Formulário">
+            <input type="submit" value="Enviar">
+        </div>
 
     </form>
+
 
 
 </body>

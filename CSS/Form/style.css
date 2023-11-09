@@ -1,26 +1,37 @@
+body {
+    background-color: #7eb6c4;
+}
+
 fieldset {
     border: 2px solid #000000;
     width: 32vw;
     margin: auto;
-    padding: 15px 0 10px 10px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-size: 2rem;
+    background-color:#7eb6c4;
+    margin-bottom: 1rem;
 }
 
 h1{
     font-family: fantasy;
     font-size: 3rem;
     text-align: center;
-    padding: 16px 0 16px 0
+    padding: 1rem 0 1rem 0;
 }
 
 .componente-form{
-    margin-bottom: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
 }
 
-#sugestoes-front {
-    width: 95%;
+#sugestoes-front, #necessidades-especiais-front {
+    width: 98%;
     margin-top: 8px;
 }
 
-#satisfacao-front {
-    
+#limpa-envia {
+    width: 12vw;
+    margin: auto;
+    margin-bottom: 1rem;
 }

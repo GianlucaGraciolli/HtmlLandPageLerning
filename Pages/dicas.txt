@@ -1,0 +1,6 @@
+Formulário - HTML
+
+	pagina responsavel por receber esses dados - action
+	method -
+		get - 
+		post -
